@@ -10,8 +10,7 @@ class FrontasticCli < Formula
     sha256 "a413afbc6e0fa893430017b3ea7ad539e8dde8c281459cfc030a2d914557edb5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-     # url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.12.1/frontastic-cli_0.12.1_linux_amd64.tar.gz"
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.12.1/frontastic-cli_0.12.1_darwin_amd64.tar.gz"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.12.1/frontastic-cli_0.12.1_linux_amd64.tar.gz"
       sha256 "14ad8f69dee6e6e41650fb5d499f6edf1f78677ad820f18928b3e46504e3eeaf"
     end
   end
