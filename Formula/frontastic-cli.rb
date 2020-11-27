@@ -2,16 +2,16 @@
 class FrontasticCli < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "frontastic-cli-0.18.0"
+  version "frontastic-cli-0.18.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.18.0/frontastic-cli_0.18.0_darwin_amd64.tar.gz"
-    sha256 "f1f8c944b1dc0e0817efdacde671c526e8194e2500014e2d1b10def7832b0290"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.18.1/frontastic-cli_0.18.1_darwin_amd64.tar.gz"
+    sha256 "23799aa1f3bfea70ea08dce060d80947e90f2a8556cf2cc96fb545256515fc5a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.18.0/frontastic-cli_0.18.0_linux_amd64.tar.gz"
-    sha256 "02e3702230591e2e6e10bce208883387f2028da6961b5331ed77b639cbc46e9d"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.18.1/frontastic-cli_0.18.1_linux_amd64.tar.gz"
+    sha256 "31dbf6b12def9a10836c843142a7d5edcb7b4cfdf373b88cf5efef23affe3017"
   end
 
   def install
