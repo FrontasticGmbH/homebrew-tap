@@ -5,19 +5,17 @@
 class FrontasticCli < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2021.03.08.08.27"
+  version "frontastic-cli-0.20.9"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2021.03.08.08.27/frontastic-cli_2021.03.08.08.27_darwin_amd64.tar.gz"
-    sha256 "f99fa9330819511bf5a659242f5d1b337685d49332405760a8723103efbb8060"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.20.9/frontastic-cli_0.20.9_darwin_amd64.tar.gz"
+    sha256 "b2b867a9b5ad6461fda6c2f399338cd08869c25adfa1da3e97d29975f39ac223"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2021.03.08.08.27/frontastic-cli_2021.03.08.08.27_linux_amd64.tar.gz"
-    sha256 "30c3540164b303ba032be1b2413bd2acdfa3b4612116a3d76a20c52f73c8a849"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-0.20.9/frontastic-cli_0.20.9_linux_amd64.tar.gz"
+    sha256 "9e26becf94b4c4efec5420a7e3dcd2c8427cdd8b1de65123d7e945968e3de4b4"
   end
-
-  conflicts_with "frontastic-cli-ea"
 
   def install
     bin.install "frontastic"
