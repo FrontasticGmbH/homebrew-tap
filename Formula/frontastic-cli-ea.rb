@@ -2,20 +2,22 @@
 class FrontasticCliEa < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2021.03.08.08.27"
+  version "frontastic-cli-ea-0.20.10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/2021.03.08.08.27/frontastic-cli-ea_2021.03.08.08.27_ea_darwin_amd64.tar.gz"
-    sha256 "1299e755673b7584de49024048e57f6f7fb5b9c67d998e51f296e1f530d3c33d"
+    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-ea-0.20.10/frontastic-cli-ea_ea-0.20.10_ea_darwin_amd64.tar.gz"
+    sha256 "84bfab377b9f041080e2488e32089324fbd669fb5483ca6c113c9d95b13a0940"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/2021.03.08.08.27/frontastic-cli-ea_2021.03.08.08.27_ea_linux_amd64.tar.gz"
-    sha256 "bad0c9821812e6edc88dd06dc92684176dd3f2e97b94000303a719ed237c9f78"
+    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-ea-0.20.10/frontastic-cli-ea_ea-0.20.10_ea_linux_amd64.tar.gz"
+    sha256 "6931b71c7e595a70742ec4d17d467706cfaff04e6aaa799f1701cbdefe536c70"
   end
+  
+  conflicts_with "frontastic-cli"
 
   def install
-    bin.install "frontastic-ea"
+    bin.install "frontastic"
     prefix.install Dir["*"]
   end
 end
