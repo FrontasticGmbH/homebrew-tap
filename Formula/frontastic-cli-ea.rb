@@ -5,16 +5,16 @@
 class FrontasticCliEa < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "frontastic-cli-0.20.10-ea"
+  version "frontastic-cli-0.20.10-ea3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-0.20.10-ea/frontastic-cli-ea_0.20.10-ea_darwin_amd64.tar.gz"
-    sha256 "97f769125465033f8705b66b5e90f050eb4b5cc6856708e31de4fcacac75196c"
+    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-0.20.10-ea3/frontastic-cli-ea_0.20.10-ea3_darwin_amd64.tar.gz"
+    sha256 "77c2a86a94be6bded896ab7749ff0cd9c2ff5d3fef6f4897fa959c58480a3765"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-0.20.10-ea/frontastic-cli-ea_0.20.10-ea_linux_amd64.tar.gz"
-    sha256 "f87f8b7833290b644d2c807a7c9b4825f578d85dead7b7a3cce82a24e1bbba00"
+    url "https://github.com/FrontasticGmbH/frontastic-cli-ea/releases/download/frontastic-cli-0.20.10-ea3/frontastic-cli-ea_0.20.10-ea3_linux_amd64.tar.gz"
+    sha256 "fac12618a2e7f6b40da1f53816629a6002dacdcd17b1cb2a98d84162304ad593"
   end
 
   conflicts_with "frontastic-cli"
