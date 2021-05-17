@@ -5,20 +5,20 @@
 class FrontasticCli < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "frontastic-cli-1.0.1"
+  version "frontastic-cli-1.1.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.0.1/frontastic-cli_1.0.1_darwin_amd64.tar.gz"
-    sha256 "4a05ee920248a37f6c06abf46298a96e406d820d3e55da0c3becc3ad460a12b7"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.1.0/frontastic-cli_1.1.0_darwin_amd64.tar.gz"
+    sha256 "5c58f84e3e93f443ffc9729c1ce8322538fbf419abc3da0da4381b5eae1be122"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.0.1/frontastic-cli_1.0.1_darwin_arm64.tar.gz"
-    sha256 "dfc37926518df11ea0031925f80314d06cb5b5c1ee35d589e6e262a72d52826b"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.1.0/frontastic-cli_1.1.0_darwin_arm64.tar.gz"
+    sha256 "4be9cbe8cbbf54f6a3dcdc3a09d61b9caaa4c0d1868f11d4f8eb5a0ca00731bc"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.0.1/frontastic-cli_1.0.1_linux_amd64.tar.gz"
-    sha256 "3c265842959ac178b7790a3b5ccc244726a0050c0c19c0206b88374a0c18c233"
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/frontastic-cli-1.1.0/frontastic-cli_1.1.0_linux_amd64.tar.gz"
+    sha256 "b33ea06c6060e52d723892e982505a2d7185ea52749498ecfa150f29bbb0ca6b"
   end
 
   conflicts_with "frontastic-cli-ea"
