@@ -21,7 +21,7 @@ class FrontasticCli < Formula
     sha256 "62bb35bb52e7ca911540fc3a73d1d9fd72e5eb6f94ea4dbddfa697680e79d919"
   end
 
-  conflicts_with "frontastic-cli-ea"
+  conflicts_with "frontastic-cli-pre"
 
   def install
     bin.install "frontastic"
