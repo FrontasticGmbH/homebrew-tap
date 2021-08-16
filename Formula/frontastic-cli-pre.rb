@@ -5,24 +5,24 @@
 class FrontasticCliPre < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "frontastic-cli-1.6.0-pre4"
+  version "frontastic-cli-1.6.0-pre5"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre4/frontastic-cli-pre_1.6.0-pre4_darwin_amd64.tar.gz"
-      sha256 "796c93eb4dd2aae9ea013f93af9dcaac2a0bd10fc495cba2e5e2b4d41194b493"
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre5/frontastic-cli-pre_1.6.0-pre5_darwin_amd64.tar.gz"
+      sha256 "eb71798d5adbd2801d96b9bd85fdadf56f99c13224f0b0cd7e67ede41a628328"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre4/frontastic-cli-pre_1.6.0-pre4_darwin_arm64.tar.gz"
-      sha256 "1f2faf3282b4870c14c499d69fa6aca5cbeca012b787f7907772586e9cf5f3bc"
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre5/frontastic-cli-pre_1.6.0-pre5_darwin_arm64.tar.gz"
+      sha256 "5ae05875b4236513bcd8653c84dc761064e2a0218abaf9c1e5a83622cbd0aad4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre4/frontastic-cli-pre_1.6.0-pre4_linux_amd64.tar.gz"
-      sha256 "7b183018e87e99229a95c3515f782d404f06752e32fa57f30ea84b6b0520ec45"
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/frontastic-cli-1.6.0-pre5/frontastic-cli-pre_1.6.0-pre5_linux_amd64.tar.gz"
+      sha256 "8c453478e36c33174a1901ea1008a0deee3e3f78f18cdf1d3621295f9d6ccba1"
     end
   end
 
