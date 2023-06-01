@@ -5,12 +5,12 @@
 class FrontasticCli < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2.0.1"
+  version "2.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.1/frontastic-cli_2.0.1_darwin_arm64.tar.gz"
-      sha256 "7815d5ca3bd9d2342d3aeeed0024bfe820f989de678ad92f44a53e654bb58a67"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.2/frontastic-cli_2.0.2_darwin_arm64.tar.gz"
+      sha256 "8389843f8fdcad9dc814a69cd11941271f078d20926b156ac8dc38c8c69f7b60"
 
       def install
         bin.install "frontastic"
@@ -19,8 +19,8 @@ class FrontasticCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.1/frontastic-cli_2.0.1_darwin_amd64.tar.gz"
-      sha256 "860f5b6efdd109e36f7ad98cf6a97143315a51e570bbaac8d5a2b671ed2ea265"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.2/frontastic-cli_2.0.2_darwin_amd64.tar.gz"
+      sha256 "1a160e0171f2b80227320b158fb61ba599f05a1432d0aa66c4f61b1b2ee93639"
 
       def install
         bin.install "frontastic"
@@ -32,8 +32,8 @@ class FrontasticCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.1/frontastic-cli_2.0.1_linux_amd64.tar.gz"
-      sha256 "8e3af1c2e9fdf6940ac8f093aaa6124a524341b5aa3e61db66e8565288da2b14"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.0.2/frontastic-cli_2.0.2_linux_amd64.tar.gz"
+      sha256 "57f02770dc29d37659de51118134ea15fc1a97dd1abd2ee29de899c0d71c773f"
 
       def install
         bin.install "frontastic"
