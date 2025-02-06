@@ -5,12 +5,12 @@
 class FrontasticCliPre < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2.4.3-pre"
+  version "2.4.4-pre"
 
   on_macos do
-    on_intel do
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.3-pre/frontastic-cli-pre_2.4.3-pre_darwin_amd64.tar.gz"
-      sha256 "1505eab230ba729ae6ae2dbb8c36bb9149b5a5fd6bac90a3b73b29d39f39d46c"
+    if Hardware::CPU.intel?
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_darwin_amd64.tar.gz"
+      sha256 "0e3215dd66029ff35a0d9326679b534ab7ae0c29cd78ecfdfa8ab9e9a9593b94"
 
       def install
         bin.install "frontastic"
@@ -18,9 +18,9 @@ class FrontasticCliPre < Formula
         ohai "\n\nRun 'frontastic init' to get started.\n"
       end
     end
-    on_arm do
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.3-pre/frontastic-cli-pre_2.4.3-pre_darwin_arm64.tar.gz"
-      sha256 "96a934484734e327c9b05d14b07b3a37921aaa7668fef37705762bc167fa2d76"
+    if Hardware::CPU.arm?
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_darwin_arm64.tar.gz"
+      sha256 "df695ba7f117e84cd4233d488405c700e7e96f9ea166b6b04382b374e68f92cb"
 
       def install
         bin.install "frontastic"
@@ -31,10 +31,10 @@ class FrontasticCliPre < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.3-pre/frontastic-cli-pre_2.4.3-pre_linux_amd64.tar.gz"
-        sha256 "ad1b0904b96b5950adbb22e6908bf9c1a35b7e4ebeb2ab066d425ce7e634c67b"
+        url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_linux_amd64.tar.gz"
+        sha256 "d12ada9bccaf5867e444087b69ace8bb2685e1a9e16553c97c0fafeac9fd684a"
 
         def install
           bin.install "frontastic"
