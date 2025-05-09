@@ -5,12 +5,12 @@
 class FrontasticCliPre < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2.4.4-pre"
+  version "2.4.5-pre"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_darwin_amd64.tar.gz"
-      sha256 "0e3215dd66029ff35a0d9326679b534ab7ae0c29cd78ecfdfa8ab9e9a9593b94"
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.5-pre/frontastic-cli-pre_2.4.5-pre_darwin_amd64.tar.gz"
+      sha256 "d6470151fd2be42fd0db8525a26c68669b4f3195fc789f138893da4b78889827"
 
       def install
         bin.install "frontastic"
@@ -19,8 +19,8 @@ class FrontasticCliPre < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_darwin_arm64.tar.gz"
-      sha256 "df695ba7f117e84cd4233d488405c700e7e96f9ea166b6b04382b374e68f92cb"
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.5-pre/frontastic-cli-pre_2.4.5-pre_darwin_arm64.tar.gz"
+      sha256 "77f215c5fff8226d4d470b076e33668582ae48d12ff2c8b340bca1e0152b777e"
 
       def install
         bin.install "frontastic"
@@ -31,16 +31,13 @@ class FrontasticCliPre < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.4-pre/frontastic-cli-pre_2.4.4-pre_linux_amd64.tar.gz"
-        sha256 "d12ada9bccaf5867e444087b69ace8bb2685e1a9e16553c97c0fafeac9fd684a"
-
-        def install
-          bin.install "frontastic"
-          prefix.install Dir["*"]
-          ohai "\n\nRun 'frontastic init' to get started.\n"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/FrontasticGmbH/frontastic-cli-pre/releases/download/2.4.5-pre/frontastic-cli-pre_2.4.5-pre_linux_amd64.tar.gz"
+      sha256 "5ab1db0aa42453b633339c3b0cabdcd8acf7ea6ad2f11b28930200bde3b43bc6"
+      def install
+        bin.install "frontastic"
+        prefix.install Dir["*"]
+        ohai "\n\nRun 'frontastic init' to get started.\n"
       end
     end
   end
