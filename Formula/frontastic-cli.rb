@@ -42,5 +42,10 @@ class FrontasticCli < Formula
     end
   end
 
+  on_linux do
+    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.1/frontastic-cli_2.8.1_linux_amd64.tar.gz" unless stable.url
+    depends_on arch: :x86_64
+  end
+
   conflicts_with "frontastic-cli-pre"
 end
