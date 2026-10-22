@@ -5,12 +5,12 @@
 class FrontasticCli < Formula
   desc ""
   homepage "https://frontastic.cloud"
-  version "2.8.1"
+  version "2.8.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.1/frontastic-cli_2.8.1_darwin_amd64.tar.gz"
-      sha256 "f1897d3bc1f3ade8dfa83cd4e20523a630060a6f43226f3c11ce015f0c18f3cc"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.2/frontastic-cli_2.8.2_darwin_amd64.tar.gz"
+      sha256 "dd735f590400f8faca2f532535fa91d3a913608daa7302586cfb652c9a69dfea"
 
       define_method(:install) do
         bin.install "frontastic"
@@ -19,8 +19,8 @@ class FrontasticCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.1/frontastic-cli_2.8.1_darwin_arm64.tar.gz"
-      sha256 "e11f3d5b98d44464e2f2508d7c25ac39f8914eee63a87420676bc8d89634297b"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.2/frontastic-cli_2.8.2_darwin_arm64.tar.gz"
+      sha256 "0100a373691f004160a44c18e642aa41bef4d5b9f4d3e3831c764f8455bd1a4d"
 
       define_method(:install) do
         bin.install "frontastic"
@@ -32,19 +32,14 @@ class FrontasticCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.1/frontastic-cli_2.8.1_linux_amd64.tar.gz"
-      sha256 "c8e059ca10a11212f58c07cb35e593fad3175e997f3ede731eef6c06ac74fc3d"
+      url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.2/frontastic-cli_2.8.2_linux_amd64.tar.gz"
+      sha256 "6be9a33a9b3e542d68b3987d61bc429ee54c70d4a877e02ae26e82666345a0fe"
       define_method(:install) do
         bin.install "frontastic"
         prefix.install Dir["*"]
         ohai "\n\nRun 'frontastic init' to get started.\n"
       end
     end
-  end
-
-  on_linux do
-    url "https://github.com/FrontasticGmbH/frontastic-cli/releases/download/2.8.1/frontastic-cli_2.8.1_linux_amd64.tar.gz" unless stable.url
-    depends_on arch: :x86_64
   end
 
   conflicts_with "frontastic-cli-pre"
